@@ -1,29 +1,3 @@
-//>25 dB – Great signals
-//18-25 dB – Very good
-//11-18 dB -  Medium
-//5-10 dB - Low
-//4 dB – Very poor
-
-// during an alarm the INT pin of the RTC is pulled low
-//
-// this is handy for minimizing power consumption for sensor-like devices, 
-// since they can be started up by this pin on given time intervals.
-//===============Settings Commands==============
-//set number to send sms            
-//"1234,NUMBER:00000000"
-//change password
-//"1234,CHANGE:1821"
-//set wake3
-//"1234,WAKE3:19:30"
-//set wake2
-//"1234,WAKE2:13:30"
-//set wake1
-//"1234,WAKE1:08:30"
-//send sms with current settings
-//"1234,CONFIG
-//send sms
-//"1234,SMS
-//===============Settings Commands==============
 
 #include <Wire.h>
 #include "ds3231.h"
